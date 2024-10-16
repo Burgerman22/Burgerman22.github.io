@@ -1,5 +1,30 @@
+html{
+    --bg: #1D1D1D;
+    --red: #E65757;
+}
+
 body{
     font-family: "Roboto Mono" !important;
     height: 100vh;
-    
+
+}
+
+h1, h2, h3, h4{
+    color: var(--red) !important;
+}
+
+
+
+.title::after{
+    content: "}";
+    color: white;
+    position: relative;
+    right: -10px;
+}
+
+.title::before {
+    content: "{";
+    color: white;
+    position: relative;
+    left: -10px;
 }
