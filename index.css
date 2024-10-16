@@ -1,11 +1,14 @@
 html{
     --bg: #1D1D1D;
     --red: #E65757;
+
+    background-color: var(--bg) !important;
 }
 
 body{
     font-family: "Roboto Mono" !important;
     height: 100vh;
+    background-color: var(--bg) !important;
 
 }
 
@@ -13,7 +16,9 @@ h1, h2, h3, h4{
     color: var(--red) !important;
 }
 
-
+.red_box_shadow{
+    box-shadow: var(--red) 0px 0px 10px 5px;
+}
 
 .title::after{
     content: "}";
@@ -27,4 +32,9 @@ h1, h2, h3, h4{
     color: white;
     position: relative;
     left: -10px;
+}
+
+.coming_soon_div{
+    /* border: solid 1pt lightgray; */
+    border-radius: 5px;
 }
