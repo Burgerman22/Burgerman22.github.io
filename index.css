@@ -1,13 +1,14 @@
 html{
     --bg: #1D1D1D;
     --red: #E65757;
+    --darker-red: #c14343;
 
     background-color: var(--bg) !important;
 }
 
 body{
     font-family: "Roboto Mono" !important;
-    height: 100vh;
+    
     background-color: var(--bg) !important;
 
 }
@@ -17,7 +18,11 @@ h1, h2, h3, h4{
 }
 
 .red_box_shadow{
-    box-shadow: var(--red) 0px 0px 10px 5px;
+    box-shadow: var(--red) 0px 0px 20px 5px;
+}
+
+.section{
+    height: 100vh;
 }
 
 .title::after{
@@ -34,7 +39,54 @@ h1, h2, h3, h4{
     left: -10px;
 }
 
-.coming_soon_div{
-    /* border: solid 1pt lightgray; */
-    border-radius: 5px;
+.landing_image{
+    position: relative;
+    height: 100%;
+    min-height: 30vh ;
+    background-color: white;
+    border-radius: 20px 0px 0px 0px;
+    /* width: 25vh; */
+    width: 100%;
+    max-width: 25vh;
+    border: solid 1pt var(--red);
+    background-image: url(./images/placeholder.png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.btn-primary{
+    background-color: var(--red) !important;
+    border: none;
+    font-weight: 300 !important;
+    border: solid 1pt var(--red);
+    
+}
+
+.btn-primary:hover {
+    background-color: var(--darker-red) !important;
+    border: solid 1pt white;
+    /* color: black; */
+}
+
+
+.links{
+    justify-content: space-around;
+    position: relative;
+    top: -25px;
+}
+
+.link{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 1pt white;
+    background-color: var(--bg);
+    /* margin: 0px 25px; */
+    aspect-ratio: 1/1;
+}
+
+.link.active{
+    background-color: var(--red);
+        box-shadow: var(--red) 0px 0px 20px 5px;
 }
