@@ -71,9 +71,9 @@ h1, h2, h3, h4{
 
 
 .links{
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
-    top: -25px;
+    top: -32.5px;
 }
 
 .link{
@@ -82,11 +82,47 @@ h1, h2, h3, h4{
     border-radius: 50%;
     border: solid 1pt white;
     background-color: var(--bg);
-    /* margin: 0px 25px; */
+    margin: 0px 2.5vw;
+    /* padding: 0px 2.5vw; */
     aspect-ratio: 1/1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
+    transition: 0.25s;
 }
 
 .link.active{
     background-color: var(--red);
         box-shadow: var(--red) 0px 0px 20px 5px;
+}
+
+.link.active>* {
+    opacity: 1 !important;
+    transition: 0.5s;
+}
+
+.link:hover{
+    box-shadow: var(--red) 0px 0px 20px 5px;
+    cursor: pointer;
+}
+
+.link:hover>*{
+    opacity: 1 !important;
+    transition: 0.25s;
+}
+
+.link_inner{
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    top: -30px;
+    /* white-space: nowrap; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    opacity: 0;
+    transition: 0.25s;
+    font-size: 10pt;
 }
