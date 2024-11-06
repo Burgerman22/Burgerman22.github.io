@@ -13,15 +13,19 @@ body{
 
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
 h1, h2, h3, h4{
     color: var(--red) !important;
 }
 
 .nav{
-    background-color: #1d1d1d7e;
+    background-color: #1d1d1d7e !important;
     backdrop-filter: blur(50px);
-    position: fixed;
-    top: 0px;
+    
     z-index: 2;
     display: flex;
     width: 100%;
@@ -44,26 +48,17 @@ h1, h2, h3, h4{
     font-weight: 800;
 }
 
+.link.active{
+    color: var(--red) !important;
+        font-weight: 800 !important;
+}
+
 .red_box_shadow{
     box-shadow: var(--red) 0px 0px 20px 5px;
 }
 
 .section{
     height: 100vh;
-}
-
-.title::after{
-    content: "}";
-    color: white;
-    position: relative;
-    right: -10px;
-}
-
-.title::before {
-    content: "{";
-    color: white;
-    position: relative;
-    left: -10px;
 }
 
 .landing_image{
@@ -101,5 +96,27 @@ h1, h2, h3, h4{
     justify-content: center;
     position: relative;
     top: -32.5px;
+}
+
+.social_ul{
+    list-style: none;
+    padding: 0px;
+    display: inline-flex;
+    /* width: 100%; */
+    justify-content: space-between;
+    margin: 0px;
+    width: 15vw;
+    min-width: 150px;
+}
+
+.social_li{
+    /* margin-right: 20px; */
+}
+
+.social_li>*>svg{
+    /* stroke: var(--red); */
+    fill: var(--red);
+    width: 2.5vw;
+    min-width: 30px
 }
 
