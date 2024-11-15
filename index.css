@@ -127,3 +127,7 @@ h1, h2, h3, h4{
     transition: 0.25s;
 }
 
+.border_top{
+    border-top: solid 1pt #8E8E8E;
+}
+
