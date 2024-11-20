@@ -131,3 +131,8 @@ h1, h2, h3, h4{
     border-top: solid 1pt #8E8E8E;
 }
 
+.col-md-6{
+    outline: #ffffff;
+    outline-width: 1px;
+    background-color: #292929;
+}
