@@ -115,9 +115,9 @@ h1, h2, h3, h4{
 
 .social_li>*>svg{
     /* stroke: var(--red); */
-    fill: var(--red);
+    fill: var(--red);       
     width: 2.5vw;
-    min-width: 30px;
+    min-width: 30px;                
     transition: 0.25s;
 }
 
@@ -135,12 +135,21 @@ h1, h2, h3, h4{
     border: solid 1pt #8E8E8E;
     background-color: #292929;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px 20px;
     margin-bottom: 20px;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: start;
+}
+
+.project_card>p{
+    color: #AAAAAA; 
+    margin-bottom: 0px; 
+}
+
+.date_tag{
+    color: white !important;
+    font-weight: light;
+    font-size: 10pt;
 }
