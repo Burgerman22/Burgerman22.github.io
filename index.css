@@ -320,6 +320,8 @@ h4 {
 	align-items: start;
 	height: 100%;
 
+	text-align: center;
+
 	-webkit-user-select: none;
 	/* Safari */
 	-ms-user-select: none;
