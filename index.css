@@ -324,6 +324,11 @@ h1, h2, h3, h4{
     height: 100%;
 }
 
+.inner>p{
+    white-space: normal;
+}
+
+
 .blog_card{
     border: solid 1pt #8E8E8E;
     background-color: #292929;
