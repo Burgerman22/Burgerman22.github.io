@@ -364,9 +364,19 @@ h4 {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	position: relative;
 }
 
 .blog_article {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	box-shadow: 3px 3px 5px 0px #0000001c;
+}
+
+.inner {
 	display: flex;
 	align-items: start;
 	justify-content: center;
@@ -375,14 +385,14 @@ h4 {
 	padding-top: 20vh;
 	padding-bottom: 20px;
 	position: relative;
+	transition: 0.25s;
 
 	background-size: cover;
 	background-position: 50%;
 	background-repeat: no-repeat;
-	margin-bottom: 20px;
 }
 
-.blog_article::before {
+.inner::before {
 	top: 0px;
 	position: absolute;
 	width: 100%;
@@ -393,7 +403,14 @@ h4 {
 	left: 0px;
 }
 
-.blog_article > * {
+.inner:hover {
+	margin-bottom: 20px;
+	transition: 0.25s;
+	color: white;
+	cursor: pointer;
+}
+
+.inner > * {
 	z-index: 2;
 }
 
