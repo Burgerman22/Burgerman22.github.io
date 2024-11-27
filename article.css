@@ -73,9 +73,14 @@ h4 {
 	flex-direction: column;
 }
 
+.img_and_caption > img {
+	width: 100%;
+	/* margin-bottom: 10px; */
+}
+
 .content > .text > img {
 	width: 100%;
-	margin-bottom: 10px;
+	/* margin-bottom: 10px; */
 }
 
 .hero_img {
@@ -211,4 +216,49 @@ h4 {
 	font-weight: 300;
 	margin-right: 10px;
 	margin-bottom: 5px;
+}
+
+.img_and_caption {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.img_and_caption > label {
+	position: absolute;
+	bottom: 0px;
+	right: 20px;
+	padding: 5px 10px;
+	background-color: var(--red);
+	color: white;
+	font-size: 0.75rem !important;
+	opacity: 0;
+	transition: 0.25s;
+}
+
+.img_and_caption:hover > label {
+	bottom: 20px;
+	opacity: 1;
+	transition: 0.25s;
+}
+
+.img_and_caption > .img_gradient {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, var(--bg), #29292929);
+	opacity: 0;
+	transition: 0.25s;
+}
+
+.img_and_caption:hover > .img_gradient {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, var(--bg), #29292929);
+	opacity: 1;
+	transition: 0.25s;
 }
