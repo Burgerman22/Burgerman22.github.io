@@ -137,7 +137,7 @@ class BlogHandler {
                 background-image: url(./images/blog_images/${article.hero_image});
             ">
             <div class="article_date">${article.date}</div>
-            <h1 class="article_title display-5 fw-bold">${article.title}</h1>
+            <h1 class="article_title h1 fw-bold">${article.title}</h1>
             <div class="article_tags d-flex flex-wrap"></div>
         </div>
         <div class="d-flex w-100 border_top mb-3"></div>
