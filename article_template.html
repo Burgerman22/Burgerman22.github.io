@@ -82,4 +82,14 @@
 			</div>
 		</div>
 	</body>
+	<script defer>
+		const el_text = document.querySelector(".text").innerHTML;
+		split = el_text.split("\n");
+		string = "";
+		split.forEach((element) => {
+			string += element.replace(/(\r\n|\n|\r|\t)/gm, "");
+		});
+		console.log(string);
+		navigator.clipboard.writeText(string);
+	</script>
 </html>
