@@ -24,6 +24,19 @@ h4 {
 	color: var(--red) !important;
 }
 
+.logo {
+	display: flex;
+	align-items: center;
+	object-fit: contain;
+	position: relative;
+}
+
+.logo > img {
+	position: relative;
+	height: 100%;
+	max-height: 50px;
+}
+
 .nav {
 	background-color: #1d1d1d7e !important;
 	backdrop-filter: blur(50px);
