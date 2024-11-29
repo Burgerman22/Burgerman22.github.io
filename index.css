@@ -119,8 +119,8 @@ h4 {
 	/* width: 100%; */
 	justify-content: space-between;
 	margin: 0px;
-	width: 15vw;
-	min-width: 150px;
+	width: 20vw;
+	min-width: 200px;
 }
 
 .social_li {
@@ -130,7 +130,8 @@ h4 {
 .social_li>*>svg {
 	/* stroke: var(--red); */
 	fill: var(--red);
-	width: 2.5vw;
+	min-width: 2.5vw;
+	min-height: 2.5vw;
 	min-width: 30px;
 	transition: 0.25s;
 }
