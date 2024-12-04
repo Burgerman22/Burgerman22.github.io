@@ -25,11 +25,11 @@ async function serverHandler(req, res) {
 		res.writeHead(200);
 		res.end(contents);
 	} else if (req.url == "/index.js") {
-		const contents = await fs.readFile(__dirname + "./index.js");
+		const contents = await fs.readFile(__dirname + "/index.js");
 		res.writeHead(200);
 		res.end(contents);
 	} else if (req.url == "/index.css") {
-		const contents = await fs.readFile(__dirname + "./index.css");
+		const contents = await fs.readFile(__dirname + "/index.css");
 		res.writeHead(200);
 		res.end(contents);
 	} else {

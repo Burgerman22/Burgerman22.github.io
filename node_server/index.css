@@ -1,0 +1,13 @@
+html {
+    --accent-color: rgb(255, 170, 0);
+    --light-1: #F36D54;
+    --light-2: #EE4086;
+    --dark-1: #2C1532;
+    --dark-2: #27314B;
+}
+
+body {
+    min-height: 100dvh;
+    background-image: linear-gradient(0deg, var(--dark-1), var(--dark-2));
+    font-family: "Roboto Mono" !important;
+}
