@@ -1,0 +1,10 @@
+How to run the node server on raspberry pi:
+
+- Install Node.js
+    - RUN FOLLOWING COMMANDS
+        - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - 
+        - sudo apt-get install -y nodejs
+        - node -v
+
+- Run the Start.js file in node
+    - node /path/to/file/start.js
